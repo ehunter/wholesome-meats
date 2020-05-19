@@ -9,22 +9,22 @@
     @font-face {
       font-family: "Maison Neue";
       font-weight: 700;
-      src: url("MaisonNeue-Bold.ttf");
+       src: url("https://static.showit.co/file/hUW24n-LSqSeHdaCCEP0kQ/101696/maisonneue-medium.ttf");
     }
     @font-face {
       font-family: "Maison Neue";
       font-weight: 500;
-      src: url("MaisonNeue-Medium.ttf");
+      src: url("https://static.showit.co/file/hUW24n-LSqSeHdaCCEP0kQ/101696/maisonneue-medium.ttf");
     }
     @font-face {
-      font-family: "Recoleta Alt";
+      font-family: "Recoleta";
       font-weight: 600;
-      src: url("RecoletaAlt-SemiBold.otf");
+      src: url("https://static.showit.co/file/RW4wJB31R92KFEeM4M2tBQ/101696/recoletaalt-semibold.otf");
     }
     @font-face {
       font-family: "Sweet Sans Pro";
       font-weight: 700;
-      src: url("SweetSansPro-Bold.otf");
+      src: url("https://static.showit.co/file/qdB2sNdJQ_Cfp3r0Pp38nw/101696/sweetsanspro-bold.otf");
     }
 
     body {
@@ -67,7 +67,7 @@
     }
     h1 {
       text-align: center;
-      font-family: "Recoleta Alt";
+      font-family: "Recoleta";
       font-weight: 700;
       font-size: 3vw;
       margin-bottom: 0.5vw;
@@ -76,7 +76,7 @@
       text-align: center;
       font-family: "Maison Neue";
       font-weight: 500;
-      font-size: 1vw;
+      font-size: 1.1vw;
       max-width: 30vw;
       margin: 0.5vw auto;
     }
@@ -85,7 +85,7 @@
     }
     .compare-side .headings {
       position: absolute;
-      top: 6vw;
+      top: 7vw;
       width: 50vw;
     }
 
@@ -155,7 +155,7 @@
     .compare-switch {
       display: inline-block;
       position: absolute;
-      top: -1vw;
+      top: 1vw;
       right: 0;
       width: 50vw;
       text-align: center;
@@ -235,12 +235,12 @@
       width: 2.3vw;
       height: 2.3vw;
       line-height: 2.55vw;
-      background: #00B3C6;
+      background: #ffffff;
       box-shadow: 0 0.1vw 0.5vw 0 rgba(0,0,0,0.20);
       border-radius: 999px;
       border: none;
       text-align: center;
-      color: white;
+      color: #00B3C6;
       font-family: "Maison Neue";
       font-weight: 700;
       font-size: 1.4vw;
@@ -252,6 +252,7 @@
     }
     .info-icon:hover {
       color: #00B3C6;
+      background: #00B3C6;
     }
     .info-bubble {
       z-index: 1000;
@@ -301,7 +302,7 @@
     .info-bubble h6 {
       margin-top: 1vw;
       margin-bottom: 1.2vw;
-      font-family: "Recoleta Alt";
+      font-family: "Recoleta";
       font-size: 2vw;
       font-weight: 700;
       line-height:2vw;
@@ -309,19 +310,52 @@
     .info-bubble .info-bubble-detail {
       opacity: 0.9;
     }
+    @media screen and (max-width: 992px) {
+        h2 {
+            font-size: 1.5vw;
+        }
+        h1 {
+            font-size: 3.5vw;
+        }
+        .info-icon {
+          width: 4vw;
+          height: 4vw;
+          font-size: 2.4vw;
+          text-align: : center;
+          line-height: 4.5vw;
+      }
+      .info-bubble {
+        width: 27vw;
+        height: 18vw;
+        font-size: 1.8vw;
+        line-height: 2.5vw;
+        padding: 3vw;
+        top: -30.4vw;
+        left: -11.2vw;
+      }
+      .info-bubble h6  {
+          font-size: 2.75vw;
+          line-height: 2.65vw;
+        }
+      .switch {
+        font-size: 1.5vw;
+        width: 21vw;
+      }
+    }
   </style>
-  <script src="addDragListener.js"></script>
-  <script src="classLists.js"></script>
+  <script src="https://static.showit.co/file/d_bf9Ky4Rn6ouDF_pHKDVA/101696/adddraglistener.js"></script>
+  <script src="https://static.showit.co/file/Prqngx17Ti6jV-Nn8uygwQ/101696/classlists.js"></script>
 </head>
 <body>
   <div id="root">
     <div id="left" class="compare-side">
       <div id="regenerative-ranch">
         <div class="sky-gradient" style="background: linear-gradient(to top, rgb(158, 213, 205), rgba(158, 213, 205, 0) 100%);"></div>
-        <img class="farm-image" src="ReGen-Ranch.png" />
+        <!-- <img class="farm-image" src="ReGen-Ranch.png" /> -->
+        <img class="farm-image" src="https://static.showit.co/file/4ruPongkS--7bcVgD0ZOMA/101696/regen-ranch.png" />
         <div class="headings">
           <h1>Regenerative Ranch</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
+          <h2>See why Regenerative Practices are a win•win•win</h2>
         </div>
         <div class="info-icon" style="left: 14vw; top: 58vw;">
           <div class="info-bubble">
@@ -335,7 +369,7 @@
           <div class="info-bubble">
             <h6>Clean Air</h6>
             <div class="info-bubble-detail">
-              Something about clean air here maybe?
+              Regenerative ranches capture more carbon than they emit, leaving the air cleaner and restoring the biodiversity of our natural ecosystems.
             </div>
           </div>
         </div>
@@ -363,17 +397,9 @@
             </div>
           </div>
         </div>
-        <div class="info-icon" style="left: 58vw; top: 58vw;">
+        <div class="info-icon" style="left: 42vw; top: 56vw;">
           <div class="info-bubble">
             <h6>Nutritious</h6>
-            <div class="info-bubble-detail">
-             Regenerative Ranch cattle eat only native grass full of vitamins and nutrients. Which produces great tasting beef full of essential vitamins and protein.
-            </div>
-          </div>
-        </div>
-        <div class="info-icon" style="left: 58vw; top: 58vw;">
-          <div class="info-bubble">
-            <h6>Nutrition</h6>
             <div class="info-bubble-detail">
              Regenerative Ranch cattle eat only native grass full of vitamins and nutrients. Which produces great tasting beef full of essential vitamins and protein.
             </div>
@@ -384,12 +410,13 @@
     <div id="right" class="compare-side" style="width: 50%">
       <div id="fake-meat-farm">
         <div class="sky-gradient" style="background: linear-gradient(to top, rgb(115, 160, 179), rgba(115, 160, 179, 0) 100%);"></div>
-        <img class="farm-image" src="Fake-Meat-Farm.png" />
+        <!-- <img class="farm-image" src="Fake-Meat-Farm.png" /> -->
+        <img class="farm-image" src="https://static.showit.co/file/wO88zLylTlSxTai9Z2Hn0Q/101696/fake-meat-farm.png" />
         <div class="headings">
           <h1>Fake Meat</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
+          <h2>See why Imitation Meat Products aren’t healing the planet.</h2>
         </div>
-        <div class="info-icon" style="left: 88vw; top: 58vw;">
+        <div class="info-icon" style="left: 68vw; top: 58vw;">
           <div class="info-bubble">
             <h6>Soil Disruption</h6>
             <div class="info-bubble-detail">
@@ -429,7 +456,7 @@
             </div>
           </div>
         </div>
-        <div class="info-icon" style="left: 88vw; top: 84vw;">
+        <div class="info-icon" style="left: 76vw; top: 94vw;">
           <div class="info-bubble">
             <h6>Depleted Soil</h6>
             <div class="info-bubble-detail">
@@ -440,12 +467,13 @@
       </div>
       <div id="feed-lot-farm">
         <div class="sky-gradient" style="background: linear-gradient(to top, rgb(234, 209, 204), rgba(234, 209, 204, 0) 100%);"></div>
-        <img class="farm-image" src="Feed-Lot-Farm.png" />
+        <!-- <img class="farm-image" src="Feed-Lot-Farm.png" /> -->
+        <img class="farm-image" src="https://static.showit.co/file/82sOEagSTLW6yofepQhIDg/101696/feed-lot-farm.png" />
         <div class="headings">
           <h1>Feed Lot</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
+          <h2>See why Feed Lots are ruining our soil and our planet.</h2>
         </div>
-        <div class="info-icon" style="left: 88vw; top: 39vw;">
+        <div class="info-icon" style="left: 78vw; top: 39vw;">
           <div class="info-bubble">
             <h6>Harmful Carbon</h6>
             <div class="info-bubble-detail">
@@ -453,7 +481,7 @@
             </div>
           </div>
         </div>
-        <div class="info-icon" style="left: 72vw; top: 49vw;">
+        <div class="info-icon" style="left: 72vw; top: 52vw;">
           <div class="info-bubble">
             <h6>Over Tilling</h6>
             <div class="info-bubble-detail">
@@ -461,7 +489,7 @@
             </div>
           </div>
         </div>
-        <div class="info-icon" style="left: 88vw; top: 58vw;">
+        <div class="info-icon" style="left: 72vw; top: 68vw;">
           <div class="info-bubble">
             <h6>Crowded and Stressed</h6>
             <div class="info-bubble-detail">
@@ -479,8 +507,8 @@
         </div>
       </div>
     </div>
-    <img class="bottom-divider" src="soil-section-divider.png" />
-    <img class="bottom-divider right-bottom-divider" src="soil-section-divider.png" />
+    <img class="bottom-divider" src="https://static.showit.co/file/THP-WBmAT3udtiy_gJ4FVQ/101696/soil-section-divider.png" />
+    <img class="bottom-divider right-bottom-divider" src="https://static.showit.co/file/THP-WBmAT3udtiy_gJ4FVQ/101696/soil-section-divider.png" />
     <div id="divider" style="right: 50%">
       <svg viewBox="-38 -920 76 1840" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <line x1="0" y1="-920" x2="0" y2="920" stroke="currentColor" stroke-width="4" stroke-dasharray="15,7" />
@@ -535,6 +563,7 @@
 
       infoIcons.forEach(function (icon) {
         icon.addEventListener('mouseover', function (e) {
+          stopAutoplay()
           addClasses(icon, 'info-icon-open')
         })
         icon.addEventListener('mouseout', function (e) {
@@ -544,7 +573,37 @@
           addClasses(icon, 'info-icon-open')
         })
       })
+
+      var currentInfo = -1;
+      var nextInfo = -1;
+
+      function openInfoBubble() {
+        if(currentInfo >= infoIcons.length) {
+          clearInterval(openInfoBubble)
+        } else {
+          if (currentInfo >= 0) {
+            removeClasses(infoIcons[currentInfo], 'info-icon-open')
+          }
+          nextInfo++
+          addClasses(infoIcons[nextInfo], 'info-icon-open')
+          currentInfo = nextInfo;
+        }
+      }
+
+      function stopAutoplay() {
+        if (autoPlayInterval) {
+          removeClasses(infoIcons[currentInfo], 'info-icon-open')
+          clearInterval(autoPlayInterval)
+        }
+      }
+
+      var autoPlayInterval = setInterval(openInfoBubble, 5000);
+
+      setTimeout(() => openInfoBubble(), 1000);
+
     })()
+
+
   </script>
 </body>
 </html>

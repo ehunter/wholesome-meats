@@ -58,13 +58,13 @@
   })
 
   let targetMeat = 0
-  const initialMeatToCarbon = 3
+  const initialMeatToCarbon = 1
 
   function meatRatio(meat) {
     return (meat - minMeat) / (maxMeat - minMeat)
   }
 
-  const feedLotBoost = 10
+  const feedLotBoost = 33
   const maxCarbon = maxMeat * initialMeatToCarbon * feedLotBoost
   function meatToCarbon(meat) {
     return Math.max(0, Math.min(maxCarbon, meat * initialMeatToCarbon * (boost === 'fakeMeat' ? 2 : boost === 'feedLotMeat' ? feedLotBoost : 1)))
@@ -149,24 +149,10 @@
 
   setTimeout(() => setMeat(10), 1000);
 
-  knob.addEventListener('mousedown', function (e) {
-    e.preventDefault()
-
-    document.body.setAttribute('class', 'is-adjusting')
-
-    function handleMove(e) {
-      e.preventDefault()
-      setMeat(xToMeat(pxToSvg(e.clientX - sliderTrack.getBoundingClientRect().x)))
-    }
-    function handleUp(e) {
-      e.preventDefault()
-      document.removeEventListener('mousemove', handleMove)
-      document.removeEventListener('mouseup', handleUp)
-      document.body.setAttribute('class', '')
-    }
-
-    document.addEventListener('mousemove', handleMove)
-    document.addEventListener('mouseup', handleUp)
+  addDragListener(knob, function (e) {
+    setMeat(xToMeat(pxToSvg(e.clientX - sliderTrack.getBoundingClientRect().x)))
+    if (e.type === 'end') removeClasses(document.body, 'is-adjusting')
+    else addClasses(document.body, 'is-adjusting')
   })
 
   function handleBoostClick(e) {

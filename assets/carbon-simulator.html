@@ -7,24 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     @font-face {
-        font-family: "Maison Neue";
-        font-weight: 700;
-/*        src: url("MaisonNeue-Bold.ttf");*/
+      font-family: "Maison Neue";
+      font-weight: 700;
+       src: url("https://static.showit.co/file/hUW24n-LSqSeHdaCCEP0kQ/101696/maisonneue-medium.ttf");
     }
     @font-face {
-        font-family: "Maison Neue";
-        font-weight: 500;
-/*        src: url("MaisonNeue-Medium.ttf");*/
+      font-family: "Maison Neue";
+      font-weight: 500;
+      src: url("https://static.showit.co/file/hUW24n-LSqSeHdaCCEP0kQ/101696/maisonneue-medium.ttf");
     }
     @font-face {
-        font-family: "Recoleta Alt";
-        font-weight: 600;
-/*        src: url("RecoletaAlt-SemiBold.otf");*/
+      font-family: "Recoleta";
+      font-weight: 600;
+      src: url("https://static.showit.co/file/RW4wJB31R92KFEeM4M2tBQ/101696/recoletaalt-semibold.otf");
     }
     @font-face {
-        font-family: "Sweet Sans Pro";
-        font-weight: 700;
-/*        src: url("SweetSansPro-Bold.otf");*/
+      font-family: "Sweet Sans Pro";
+      font-weight: 700;
+      src: url("https://static.showit.co/file/qdB2sNdJQ_Cfp3r0Pp38nw/101696/sweetsanspro-bold.otf");
     }
 
     body {
@@ -102,9 +102,67 @@
     .boost-button.is-toggled > .boost-amount {
         fill: #18463E;
     }
+    @media screen and (max-width: 992px) {
+        #Knob {
+            r: 60;
+        }
+        #Slider {
+            transform: translate(729px, 420px);
+        }
+        #Value-Indicator {
+            width: 100;
+
+        }
+        #Teardop {
+            transform: translate(-44px, -172px)
+        }
+        #Pounds {
+            transform: translate(0px, -95px);
+            font-size: 32px;
+        }
+        #Wholesome-Logo{
+            transform: translate(-28.75px, -155px);
+        }
+        #Destinations {
+            stroke-width: 15;
+        }
+        #Pounds-of-Meat {
+            font-size: 78px;
+        }
+        #Pounds-of-Carbon {
+            font-size: 78px;
+        }
+        #description-text{
+            font-size: 28px;
+            line-height: 28;
+            transform: translate(729px, -100px);
+        }
+        #Min-Value{
+            font-size: 28px;
+            line-height: 24;
+        }
+        #Max-Value{
+            font-size: 28px;
+            line-height: 24;
+        }
+        #Data-source{
+            font-size: 18px;
+        }
+        #Data{
+            transform: translate(729px, 580px);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        #Destinations {
+            stroke-width: 18;
+        }
+        #Earth {
+            stroke-width: 20;
+        }
+    }
   </style>
-  <script src="addDragListener.js"></script>
-  <script src="classLists.js"></script>
+  <script src="https://static.showit.co/file/d_bf9Ky4Rn6ouDF_pHKDVA/101696/adddraglistener.js"></script>
+  <script src="https://static.showit.co/file/Prqngx17Ti6jV-Nn8uygwQ/101696/classlists.js"></script>
 </head>
 
 <body style="overflow: hidden;">
@@ -548,31 +606,31 @@
     <g id="Wholesome-Meats" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Wholesome-Meats--Carbon-Simulator" transform="translate(0.000000, 4.000000)">
             <g id="Slider" transform="translate(729.000000, 390.000000)" font-family="Maison Neue" font-weight="500">
-                <g id="Min-Value" transform="translate(-370.000000, 0.000000)" fill="#18463E" font-size="21" line-spacing="36">
+                <g id="Min-Value" transform="translate(-385.000000, 0.000000)" fill="#18463E" font-size="21" line-spacing="36">
                     <text id="0-lbs" text-anchor="end" dominant-baseline="central">
                         <tspan x="0" y="-8">0 lbs</tspan>
                         <tspan x="0" y="18">beef</tspan>
                     </text>
                 </g>
-                <g id="Max-Value" transform="translate(370.000000, 0.000000)" fill="#18463E" font-size="21" line-spacing="36">
+                <g id="Max-Value" transform="translate(385.000000, 0.000000)" fill="#18463E" font-size="21" line-spacing="36">
                     <text id="75" text-anchor="start" dominant-baseline="central">
                         <tspan x="0" y="-8">75 lbs</tspan>
                         <tspan x="0" y="18">beef</tspan>
                     </text>
                 </g>
                 <g transform="translate(-343.000000, 0.000000)">
-                    <g id="Destinations" transform="translate(0.000000, 0.000000)" stroke-linecap="square" stroke-width="4">
+                    <g id="Destinations" transform="translate(0.000000, 0.000000)" stroke-linecap="square" stroke-width="10">
                         <g id="Icon">
-                            <line id="Slider-Track" x1="0" y1="0" x2="686" y2="0" stroke="#18463E" opacity="0.254627046"></line>
+                            <line id="Slider-Track" x1="0" y1="0" x2="686" y2="0" stroke="#18463E" opacity="0.25"></line>
                             <line id="Slider-Fill" x1="0" y1="0" x2="686" y2="0" transform="translate(0, 0)" stroke="#6CA342"></line>
                         </g>
                     </g>
                     <g id="Value-Indicator" transform="translate(0.000000, 0.000000)">
-                        <g transform="translate(-44, -149)">
+                        <g id="Teardop" transform="translate(-44, -152)">
                             <use id="Value-Indicator-Teardop" fill="#6CA342" xlink:href="#path-3"></use>
                         </g>
-                        <text id="Pounds" mask="url(#mask-4)" font-size="21" line-spacing="20" letter-spacing="0.375" fill="#F5F3EE" text-anchor="middle">
-                            <tspan x="0" y="-80">0</tspan>
+                        <text id="Pounds" mask="url(#mask-4)" font-size="21" transform="translate(0, -80)" line-spacing="20" letter-spacing="0.375" fill="#F5F3EE" text-anchor="middle">
+                            <tspan>0</tspan>
                         </text>
                         <g id="Wholesome-Logo" transform="translate(-28.75, -130)">
                             <path d="M42.6257,23.5426 C42.5087,23.5426 42.3917,23.5266 42.2777,23.4976 C41.9297,23.4036 41.6357,23.1806 41.4547,22.8676 C41.2737,22.5556 41.2257,22.1906 41.3187,21.8406 C42.7047,16.6256 45.4127,11.7846 49.1487,7.8416 C49.4057,7.5706 49.7547,7.4206 50.1317,7.4206 C50.4797,7.4206 50.8107,7.5526 51.0627,7.7906 C51.6037,8.3046 51.6267,9.1636 51.1137,9.7056 C47.6887,13.3176 45.2067,17.7546 43.9347,22.5366 C43.7787,23.1246 43.2467,23.5376 42.6397,23.5426 L42.6257,23.5426 Z" id="Fill-1" stroke="none" fill="#F5F3EE" fill-rule="evenodd"></path>
@@ -588,11 +646,13 @@
                         </g>
                         <g id="Dragger">
                             <circle id="💡States" fill="#000000" fill-opacity="0.04" cx="0" cy="0" r="33"></circle>
-                            <circle id="Knob" fill="#6CA342"  cx="0" cy="0" r="20"></circle>
+                            <!-- <circle id="Knob" fill="#6CA342"  cx="0" cy="0" r="30"></circle>
                             <g id="Drag-handles" stroke="#F5F3EE" stroke-linecap="square" stroke-width="2">
                                 <line x1="-3.5" y1="-5.5" x2="-3.5" y2="5.5" id="Line-4"></line>
                                 <line x1="3.5" y1="-5.5" x2="3.5" y2="5.5" id="Line-4"></line>
-                            </g>
+                            </g> -->
+                            <circle id="Knob" cx="0" cy="0" r="37" fill="#6CA342" />
+                            <path d="M-13,-9 l-9,9 l9,9 M13,-9 l9,9 l-9,9" stroke="#F5F3EE" stroke-width="3" fill="none" />
                         </g>
                     </g>
                 </g>
@@ -602,7 +662,7 @@
                     <tspan x="220" y="106">of harmful carbon </tspan>
                     <tspan x="220" y="130">captured per year</tspan>
                 </text>
-                <text id="Pounds-of-Carbon" font-family="Recoleta Alt" font-weight="600" font-size="54" line-spacing="36">
+                <text id="Pounds-of-Carbon" font-family="Recoleta" font-weight="600" font-size="54" line-spacing="36">
                     <tspan x="220" y="74">0 lbs</tspan>
                 </text>
                 <text id="=" font-size="100" fill="#6CA342">
@@ -611,13 +671,13 @@
                 <text id="of-Wholesome-Meat" font-family="Sweet Sans Pro" font-weight="700" font-size="18" line-spacing="24">
                     <tspan x="-220" y="106">of Wholesome Meat</tspan>
                 </text>
-                <text id="Pounds-of-Meat" font-family="Recoleta Alt" font-weight="600" font-size="54" line-spacing="36">
+                <text id="Pounds-of-Meat" font-family="Recoleta" font-weight="600" font-size="54" line-spacing="36">
                     <tspan x="-220" y="74">0 lbs</tspan>
                 </text>
             </g>
             <g transform="translate(0.000000, 540.000000)">
-            <g transform="translate(729, -150)" text-anchor="middle">
-                    <text font-family="Sweet Sans Pro" font-weight="700" font-size="18" line-spacing="21" fill="#18463E">
+            <g id="description-text" transform="translate(729, -150)" text-anchor="middle" font-family="Sweet Sans Pro" font-weight="700" font-size="18" line-spacing="21" fill="#18463E">
+                    <text>
                         <tspan x="0" y="91">How much harmful carbon can you capture by</tspan>
                         <tspan x="0" y="115">switching from Feed Lot Meat to Wholesome Meats?</tspan>
                     </text>
@@ -661,7 +721,7 @@
                     <path d="M9.88812121,20.5280859 L11.9772121,18.439601 C12.4511515,17.9656617 13.2178182,17.9656617 13.6911515,18.439601 C14.1650909,18.9129344 14.1644848,19.679601 13.6911515,20.1535404 L11.6020606,22.2420253 C11.1293333,22.7153586 10.3614545,22.7153586 9.88812121,22.2420253 C9.41539394,21.768692 9.41539394,21.0014192 9.88812121,20.5280859 Z" id="Fill-45"></path>
                 </g>
             </g>
-            <text id="*-Data-source" opacity="0.8" font-family="Maison Neue" font-size="12" font-weight="500" fill="#18463E">
+            <text id="Data-source" opacity="0.8" font-family="Maison Neue" font-size="12" font-weight="500" fill="#18463E">
                 <tspan x="1090" y="700">* Quantis, Carbon Footprint Evaluation of</tspan>
                 <tspan x="1090" y="715">Regenerative Grazing at White Oak Pastures</tspan>
                 <tspan x="1090" y="730"><a href="http://www.quantis-intl.com/">www.quantis-intl.com</a></tspan>
@@ -791,24 +851,16 @@
                     <circle fill="#757575" cx="511.5" cy="308.5" r="15.5"></circle>
                 </g>
             </g>
-            <image id="Cow" href="cow.png" width="260" height="131" transform="translate(0,800) translate(90,-135)" />
-            <image id="Grass" href="grass.png" width="2880" height="243" transform="translate(0,800) scale(0.6,0.1) translate(0,-248)" />
+            <image id="Cow" href="https://static.showit.co/file/ZZQFtBycSgedV0UKK5LJ5Q/101696/cow.png" width="260" height="131" transform="translate(0,800) translate(90,-135)" />
+            <image id="Grass" href="https://static.showit.co/file/a8gcQp2YSJ2i3WQO-4NBsw/101696/grass.png" width="2880" height="243" transform="translate(0,800) scale(0.6,0.1) translate(0,-248)" />
             <rect width="100%" height="20" transform="translate(0,800) translate(0,-6)" style="fill:rgb(108,163,66);" />
-            <image id="Soil-Layer-3" href="soil-layer-3.jpg" width="1480" height="127"  transform="translate(0,800) translate(0,90)" />
-            <image id="Soil-Layer-2" href="soil-layer-2.png" width="1480" height="165" transform="translate(0,800) translate(0,20)" />
-            <image id="Soil-Layer-1" href="soil-layer-1.jpg" width="1480" height="167" transform="translate(0,800) translate(0,-50)" />
-            <image id="Soil-Roots" href="soil-roots.png" width="1480"  height="300" transform="translate(0,800) translate(0,-48)" />
-            <!-- <image id="Cow" href="https://static.showit.co/file/ZZQFtBycSgedV0UKK5LJ5Q/101696/cow.png" width="260" transform="translate(0,800) translate(90,-135)" />
-            <image id="Grass" href="https://static.showit.co/file/a8gcQp2YSJ2i3WQO-4NBsw/101696/grass.png" width="2880" transform="translate(0,800) scale(0.6,0.1) translate(0,-248)" />
-            <rect width="100%" height="20" transform="translate(0,800) translate(0,-6)" style="fill:rgb(108,163,66);" />
-            <image id="Soil-Layer-3" href="https://static.showit.co/file/62zoENgfQEGh7bf-voCRnA/101696/soil-layer-3.jpg" width="1480" transform="translate(0,800) translate(0,112)" />
-            <image id="Soil-Layer-2" href="https://static.showit.co/file/_ahsNuOYRU-f7LgdvEf-OA/101696/soil-layer-2.png" width="1480" transform="translate(0,800) translate(0,48)" />
-            <image id="Soil-Layer-1" href="https://static.showit.co/file/AZthmkHHScWsjrddVRfckg/101696/soil-layer-1.jpg" width="1480" transform="translate(0,800) translate(0,8)" />
-            <image id="Soil-Roots" href="https://static.showit.co/file/rmDJ7meCQs2S_wSu_4PE5w/101696/soil-roots.png" width="1480" transform="translate(0,800) translate(0,8)" /> -->
+            <image id="Soil-Layer-3" href="https://static.showit.co/file/62zoENgfQEGh7bf-voCRnA/101696/soil-layer-3.jpg" width="1480" height="127"  transform="translate(0,800) translate(0,90)" />
+            <image id="Soil-Layer-2" href="https://static.showit.co/file/_ahsNuOYRU-f7LgdvEf-OA/101696/soil-layer-2.png" width="1480" height="165" transform="translate(0,800) translate(0,20)" />
+            <image id="Soil-Layer-1" href="https://static.showit.co/file/AZthmkHHScWsjrddVRfckg/101696/soil-layer-1.jpg" width="1480" height="167" transform="translate(0,800) translate(0,-50)" />
+            <image id="Soil-Roots" href="https://static.showit.co/file/rmDJ7meCQs2S_wSu_4PE5w/101696/soil-roots.png" width="1480"  height="300" transform="translate(0,800) translate(0,-48)" />
         </g>
     </g>
   </svg>
-  <script src="carbon-simulator.js"></script>
-  <!-- <script src="https://static.showit.co/file/BeZm7vhgSpWlU3060fhu-A/101696/carbon-simulator.js"></script> -->
+  <script src="https://static.showit.co/file/Xnt6Oi_lToixg4jxFgLkQA/101696/carbon-simulator.js"></script>
 </body>
 </html>
